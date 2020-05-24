@@ -1,0 +1,84 @@
+body{
+  border: 4px solid black;
+  background-image: url(wall.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#box{
+  width:40%;
+  height:900px;
+  margin:100px auto;
+  border-radius:5%;
+  background-color: #1e1e1e;
+  color:white;
+}
+.avtarframe{
+  height:150px;
+  width:35%;
+  margin:0 auto;
+  border-radius: 50%;
+  background-image: url(avtar.jpg);
+  background-position: center;
+
+  background-size: cover;
+
+  position:relative;
+  top:-70px;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  top:-60px;
+}
+
+.loginbox{
+
+  margin-left:50px ;
+  position: relative;
+  top:-50px;
+}
+
+.loginbox input{
+  width:80%;
+  font-size: 20px;
+}
+
+p{
+  font-weight:20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 10px;
+
+}
+
+input[type="text"], [type="password"], [type="number"]{
+  border: none;
+  outline: none;
+border-bottom: 2px solid #eee;
+background: transparent;
+height:30px;
+color: white;
+}
+
+
+button[type="submit"]:hover
+{
+background-color:#99ff33;
+  border-color: red;
+}
+button[type="submit"]
+{
+font-size: 22px;
+font-weight: 50px;
+letter-spacing: 1px;
+width:80%;
+margin: 0 auto;
+color:#1e1e1e;
+background-color:#ff9933;
+}

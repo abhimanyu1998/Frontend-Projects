@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript">
+	var myapp=angular.module("myapp",[])
+		myapp.controller("mycontrol",function($scope){
+
+			$scope.items=["Apple","Samsung","Mango","Rustom","Mi","OnePlus"];
+		});
+	</script>
+</head>
+<body>
+<div ng-app="myapp">
+	<div ng-controller="mycontrol">
+		<ol>
+			<li ng-repeat="x in items">{{x}}</li>
+		</ol>
+	</div>
+</div>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript">
+		var myapp=angular.module("myapp",[]);
+		myapp.controller("mycontrol",function($scope)
+		{
+			$scope.obj=[{name:"JANI",age:20},{name:"HEGE",age:5},{name:"kai",age:11}];
+			$scope.items=["apple","hello","kya","tum","ab","ja","rhe","ho"];
+		});
+	</script>
+</head>
+<body ng-app="myapp">
+
+	<form>
+		<label>FIRST NAME</label><br>
+		<input type="text" name="" ng-model="first">
+		<br>
+		<label>LAST NAME</label><br>
+		<input type="text" name="" ng-model="last">
+	</form>
+	<br>
+	<label>FIRST NAME+LAST NAME==>></label>
+	<b>{{first+last}}</b>
+
+	<div ng-controller="mycontrol">
+		<ol>
+			<li ng-repeat="object in obj|orderBy:'age' ">{{object.name+" "+object.age}}</li>
+		</ol>
+		<ol>
+			<li ng-repeat="obj in items|filter:first">{{obj}}</li>
+		</ol>
+	</div>
+
+
+
+</body>
+</html> -->

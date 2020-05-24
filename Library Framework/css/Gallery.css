@@ -1,0 +1,161 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+body{
+  background-color:#eee;
+  border: 2px solid #6600cc;
+}
+
+.cls0
+{
+	height: 1200px;
+	width: 100%;
+}
+.cls1
+{
+	height: 100px;
+	width: 100%;
+	border: 5px solid #1e1e1e;
+	padding-top: 23px;
+	background-color: #ffbf00;
+}
+
+
+.menu
+{
+	float: left;
+	font-size: 27px;
+  font-family: 'Literata', serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+  border-radius: 10%;
+  color:#b33c00;
+  text-shadow: 2px 2px #fff;
+  padding-right: 4px;
+  text-decoration: underline;
+}
+a:hover {
+  color: black;
+  background-color:  #0000ff;
+}
+
+.footer
+{
+	width: 100%;
+	height: 100px;
+  float: left;
+  background-color: #34495E;
+}
+
+
+.index-boxlink-square1{
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+  height:225px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align:center;
+  float:left;
+  margin: 30px 10px 0 30px;
+
+}
+
+.imagesize{
+  height:300px;
+  width:100%;
+
+}
+
+
+.image-lib{
+  height:1000px;
+  width:100%;
+
+
+}
+
+.image-lib a{
+  text-decoration: none;
+  color:#ffff00;
+  font-weight: 200px;
+  font-size: 20px;
+  text-shadow: 2px 2px #1e1e1e;
+
+
+}
+
+
+
+.head{
+    font-family: 'DM Serif Text', serif;
+    font-size: 40px;
+    width :100%;
+  font-weight: 400;
+    color:#ff9900;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    padding:10px 10px;
+    float:left;
+    text-shadow: 2px 2px #1e1e1e;
+
+  }
+
+
+
+
+
+
+
+
+  .end1{
+  padding-right: 20px;
+
+
+
+  }
+
+
+  .index-boxlink-square2{
+    margin: 20px 20px 0 20px;
+    width: 100%;
+    height:225px;
+  }
+
+  a{
+    text-decoration: none;
+    color:white;
+    font-weight: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px #1e1e1e;
+
+  }
+.gallery_div1
+{
+  width: 40px;
+  height: 30px;
+  background-color: red;
+}
+.gallery_div
+{
+  width: 100%;
+  height: 700px;
+  background-color: blue;
+}
+
+.desc
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 200px;
+    font-size: 30px;
+    text-shadow: 2px 2px #1e1e1e;
+
+  }

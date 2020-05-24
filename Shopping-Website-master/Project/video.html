@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video id="myVideo" style="width: 100%; height: 600px;" controls>
+  <source id="mp4_src" src="img/familyman.mp4" type="video/mp4">
+</video>
+
+<p>Click the buttons to play or pause the video.</p>
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button> 
+
+<script>
+var x = document.getElementById("myVideo"); 
+
+function playVid() { 
+  x.play(); 
+} 
+
+function pauseVid() { 
+  x.pause(); 
+} 
+</script>
+</body>
+</html>

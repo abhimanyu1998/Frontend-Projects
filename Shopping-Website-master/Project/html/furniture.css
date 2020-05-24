@@ -1,0 +1,113 @@
+div
+{
+	display: inline-block;
+}
+a
+{
+	text-decoration: none;
+
+	/*color: orange;*/
+}
+li
+{
+	margin-top: 10px;
+
+}
+#maindiv1
+{	width: 300px;
+	height: 750px;
+	background-color: #D6EAF8;
+	position: absolute;
+	font-weight: 500;
+	font-size: 25px;
+	color: black;
+	border:2px solid black;
+
+
+}
+#insidediv1
+{	width: 295px;
+	height: 600px;
+	position: absolute;
+	font-weight: 500;
+	font-size: 25px;
+	color: black;
+	border:2px solid black;
+}
+#insidediv2
+{
+	width: 295px;
+	height: 130px;
+	margin-top: 610px;
+	background-color: #E8F8F5;
+	position: absolute;
+	font-weight: 500;
+	font-size: 25px;
+	color: black;
+	border:2px solid black;
+}
+#back
+{
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color:rgb(40,116,240) ;
+	font-size: 25px;
+	font-weight: 700;
+	color: white;
+
+}
+#div2
+{
+	width: 5px;
+	height: 750px;
+	background-color: grey;
+	margin-left: 310px;
+
+}
+#div3
+{
+	width: 1020px;
+	height: 750px;
+	background-color: #F4F6F6;
+	position: absolute;
+	border:2px solid black;
+	margin-left: 2px;
+
+}
+.divboxout
+{
+	height: 230px;
+	width: 100%;
+	background-color: white;
+}
+img
+{
+	height: 100%;
+	width: 100%;
+
+}
+.fourdiv
+{
+	width: 225px;
+	height: 200px;
+	background-color: white;
+	display: inline-block;
+	margin: 13px;
+
+}
+.twodiv
+{
+	width: 450px;
+	height: 200px;
+	margin-left:35px;
+	margin-top: 15px;
+	background-color: white;
+}
+
+.zoom {
+  transition: transform .3s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+  }

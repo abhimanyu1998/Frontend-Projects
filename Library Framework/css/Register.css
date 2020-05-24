@@ -1,0 +1,79 @@
+h1{
+
+  margin: 20px 20px;
+  letter-spacing: 2px;
+  padding: 0;
+  text-align: left;
+  font-size: 25px;
+  font-family: 'DM Serif Display', serif;
+  color: #ff9900;
+}
+
+
+.loginbox{
+  margin:10px 10px;
+  padding:0;
+  width:60%;
+  height: 600px;
+
+}
+
+.loginbox p{
+margin : 20px 10px 5px 10px;
+font-weight: bold;
+letter-spacing: 2px;
+font-family: 'DM Serif Display', serif;
+color: #ff9900;
+}
+
+.loginbox input[type="text"], input[type="password"], input[type="number"]
+{
+border-width: medium;
+height:25px;
+width:500px;
+
+
+}
+
+
+
+
+.loginbox input[type="submit"],input[type="button"],input[type="text"], input[type="password"], input[type="number"] hover:{
+
+  border-width: 5px;
+}
+
+.loginbox input[type="submit"],input[type="button"]{
+  margin:30px 20px;
+  border-color: #1e1e1e;
+  height:40px;
+  background: 	#ff9900;;
+width:150px;
+font-weight: bold;
+font-family: sans-serif;
+color: black;
+
+
+
+}
+
+.loginbox a{
+  margin:10px 10px 10px 10px;
+  display: inline-block;
+text-decoration:underline;
+font-weight:15px;
+color:#1e1e1e;
+font-family:fantasy;
+font-size: 20px;
+}
+
+.register_div
+{
+  padding-left:15px;
+  float: left;
+  width: 69%;
+  height: 690px;
+  margin-top: 15px;
+  background-color: #D6EAF8;
+
+}

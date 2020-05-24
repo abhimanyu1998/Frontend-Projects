@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+	
+	<link rel="stylesheet" type="text/css" href="CSS/player.css">
+	<script src="JS/player.js"></script>
+
+</head>
+<body bgcolor="black">
+
+
+
+	<div id="main-div">
+			
+		<audio id="myAudio"><source src="slowly.mp3" type="audio/mpeg"></audio>
+
+		<header>
+
+			<div id="div-header">
+				<div id="music-icon"><img src="IMG/musicicon1.jpeg"></div>
+					<h3 class="musicplayername">Bhardwaj Studio</h3>
+					<img id="search-bar-icon" src="IMG/search.png">
+					<div id="search-bar"><input type="text" name="" placeholder="Search Music"></div>
+					<div style="position: absolute;margin-left: 1060px;top:50px;color:white; font-size: 20px;">
+					<i class="fas fa-bell"></i></div>
+				</div>
+			
+		</header>
+
+				<main>
+
+					<div id="music-category">
+							<div id="music-category-header" class="music-category"><p>Collection</p></div>
+							<div class="music-category" id="music-category-main">
+
+							<div id="music-category-main-div1" class="music-category music-category-main-divs zoom">
+								<div class="music-category-main-icon"><i class="fas fa-compact-disc"></i>
+								<div class="music-cat">New Songs</div>
+								</div>	
+							</div>
+
+							<div id="music-category-main-div2" class="music-category music-category-main-divs zoom">
+								<div class="music-category-main-icon"><i class="fas fa-music"></i>
+								<div class="music-cat">Favourite</div> 
+								</div>
+							</div>
+
+							<div id="music-category-main-div3" class="music-category music-category-main-divs zoom">
+								<div class="music-category-main-icon"><i class="fab fa-spotify"></i>
+								<div class="music-cat">Online Music</div>
+								</div>
+							</div>
+							
+							<div id="music-category-main-div4" class="music-category music-category-main-divs zoom">
+								<div class="music-category-main-icon"><i class="fas fa-video"></i>
+								<div class="music-cat">Video</div>
+								</div>
+							</div>
+
+							<div id="music-category-main-div5" class="music-category music-category-main-divs zoom">
+								<div class="music-category-main-icon"><i class="fab fa-napster"></i>
+								<div class="music-cat">Trending</div>
+								</div>
+							</div>
+							<hr style="margin-top: 400px;">
+							
+						</div>
+					</div>
+
+				<div class="menu1" id="left-div" >
+
+
+				<div class="left-margin" id="list1">
+
+						<div class="div-3-pics zoom" onclick="myMove()"><img src="IMG/amaal.jpeg"></div>
+						<div class="div-3-pics zoom" onclick="myMove()"><img src="IMG/arijit.jpg"></div>
+						<div class="div-3-pics zoom" onclick="myMove()"><img src="IMG/arman.jpeg"></div>
+						
+					</div>
+
+				<div class="left-margin" id="list2">
+									
+
+				<div class="section2-4div"><div class="section2-innerdiv" 
+					onmouseout="hide_play('onhover-img1','play-pause-1btn','play-pause2-1')"
+					 onmouseover="show_play('onhover-img1','play-pause-1btn','play-pause2-1')">
+					<img  id="onhover-img1" src="IMG/musicimg1.jpeg">
+					<div class="play-pause2" onclick="play_pause('play-pause-1btn','play-pause2-1')" id="play-pause2-1">
+					<i class="fas fa-pause"></i></div>
+					<div id="play-pause-1btn" onclick="play_pause(this.id,'play-pause2-1')" class="play-pause-btn">
+					<i class="fas fa-play"></i></div>
+					</div>
+
+					<div class="music-time-div music-time-div1">SlowDown<br><br>04:56</div>
+						<i onclick="show('box1')" class="fas fa-ellipsis-h option-icon"></i>
+						<div id="box1" class="option-3dots option-3dots1">
+						<span class="info"><i class="fas fa-play"></i></span >Play<hr><span class="info">
+						<i class="fas fa-plus"></i></span >Add To List<hr><span class="info">
+						<i class="fas fa-info-circle"></i></span >Info
+					</div></div>
+
+
+				<div class="section2-4div"><div class="section2-innerdiv" 
+					onmouseout="hide_play('onhover-img2','play-pause-2btn','play-pause2-2')"
+					 onmouseover="show_play('onhover-img2','play-pause-2btn','play-pause2-2')">
+					<img id='onhover-img2' src="IMG/musicimg2.jpeg">
+					<div class="play-pause2"  onclick="play_pause('play-pause-2btn','play-pause2-2')" id="play-pause2-2">
+						<i class="fas fa-pause"></i></div>
+						<div id="play-pause-2btn" onclick="play_pause(this.id,'play-pause2-2')" class="play-pause-btn">
+						<i class="fas fa-play"></i>
+						</div>
+					</div>
+
+				<div class="music-time-div music-time-div1">Galliyan<br><br>03:43</div>
+						<i onclick="show('box2')" class="fas fa-ellipsis-h option-icon"></i>
+						<div id="box2" class="option-3dots option-3dots2">
+						<span class="info"><i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"><i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"><i class="fas fa-info-circle"></i></span >Info
+					</div>
+				</div>
+
+				<div class="section2-4div"><div class="section2-innerdiv" 
+					onmouseout="hide_play('onhover-img3','play-pause-3btn','play-pause2-3')" 
+					onmouseover="show_play('onhover-img3','play-pause-3btn','play-pause2-3')">
+					<img id='onhover-img3' src="IMG/musicimg3.jpeg">
+					<div class="play-pause2"  onclick="play_pause('play-pause-3btn','play-pause2-3')" id="play-pause2-3">
+						<i class="fas fa-pause"></i></div>
+						<div id="play-pause-3btn" onclick="play_pause(this.id,'play-pause2-3')"  class="play-pause-btn">
+						<i class="fas fa-play"></i>
+						</div>
+					</div>
+
+						<div class="music-time-div music-time-div1">Tum hi ho<br><br>02:45</div>
+
+						<i  onclick="show('box3')" class="fas fa-ellipsis-h option-icon"></i>
+						<div id="box3" class="option-3dots option-3dots1">
+						<span class="info"><i class="fas fa-play"></i></span >Play<hr>
+						<span class="info"><i class="fas fa-plus"></i></span >Add To List<hr>
+						<span class="info"><i class="fas fa-info-circle"></i></span >Info</div>
+				</div>
+
+				<div class="section2-4div"><div class="section2-innerdiv"
+					 onmouseout="hide_play('onhover-img4','play-pause-4btn','play-pause2-4')"
+					  onmouseover="show_play('onhover-img4','play-pause-4btn','play-pause2-4')">
+					<img id='onhover-img4'  src="IMG/musicimg4.jpeg">
+					<div class="play-pause2"  onclick="play_pause('play-pause-4btn','play-pause2-4')" id="play-pause2-4">
+						<i class="fas fa-pause"></i></div>
+						<div id="play-pause-4btn" onclick="play_pause(this.id,'play-pause2-4')"class="play-pause-btn">
+						<i class="fas fa-play"></i>
+						</div>
+					</div>
+
+				<div class="music-time-div music-time-div1">Mat ja re<br><br>05:26</div>
+				<i onclick="show('box4')" class="fas fa-ellipsis-h option-icon"></i>
+				<div  id="box4" class="option-3dots option-3dots2">
+					<span class="info"><i class="fas fa-play"></i></span >Play<hr>
+					<span class="info"><i class="fas fa-plus"></i></span >Add To List<hr>
+					<span class="info"><i class="fas fa-info-circle"></i></span >Info
+
+				</div>
+				</div>
+
+				</div>
+
+
+			<div class="left-margin" id="list3-1">
+
+			<div class="artist">Popular Artist</div>
+			<div class="circle-list1 circle-list"><img  class="circle-list" src="IMG/himesh.jpeg">
+				<div  id="play-pause-2btn" onclick="myMove()" class="play-pause-btn change-display">
+				<i class="fas fa-play"></i></div></div>
+			<div class="circle-list1 circle-list"><img  class="circle-list" src="IMG/palak.jpeg">
+				<div id="play-pause-2btn" onclick="myMove()" class="play-pause-btn change-display">
+				<i class="fas fa-play"></i></div></div>
+			<div class="circle-list1 circle-list"><img  class="circle-list" src="IMG/sonu.jpeg">
+				<div id="play-pause-2btn" onclick="myMove()" class="play-pause-btn change-display">
+				<i class="fas fa-play"></i></div></div>
+			<div class="circle-list1 circle-list"><img  class="circle-list" src="IMG/jubin.jpeg">
+				<div id="play-pause-2btn" onclick="myMove()" class="play-pause-btn change-display">
+				<i class="fas fa-play"></i></div></div>
+			<div class="circle-list1 circle-list"><img  class="circle-list" src="IMG/vishal.jpeg">
+				<div id="play-pause-2btn" onclick="myMove()" class="play-pause-btn change-display">
+				<i class="fas fa-play"></i></div></div>
+			<div class="circle-list1 circle-list"><img  class="circle-list" src="IMG/arijit.jpeg">
+				<div id="play-pause-2btn" onclick="myMove()" class="play-pause-btn change-display">
+				<i class="fas fa-play"></i></div></div>
+				
+			</div>
+
+		<div class="left-margin" id="list4">
+
+		<div class="artist">Latest Release</div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">Love</div>
+		<img  class="circle-list" src="IMG/songtype1.jpeg"></div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">Yoga</div>
+		<img  class="circle-list" src="IMG/songtype2.jpeg"></div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">Drive</div>
+		<img  class="circle-list" src="IMG/songtype3.jpeg"></div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">Party</div>
+		<img  class="circle-list" src="IMG/songtype4.jpeg"></div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">Old</div>
+		<img  class="circle-list" src="IMG/songtype5.jpeg"></div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">Rock</div>
+		<img  class="circle-list" src="IMG/songtype6.jpeg"></div>
+		<div class="circle-list2 circle-list"><div onclick="myMove()" class="text-on-circleimg">D.J</div>
+		<img  class="circle-list" src="IMG/songtype7.jpeg"></div>
+				
+		</div>
+			
+
+
+			<div class="left-margin" id="list5">
+
+				<div class="section5-3div"onclick="myMove()"><div  class="text-on-img">Party</div>
+				<img class="effect" src="IMG/party.jpeg"></div>
+				<div class="section5-3div"onclick="myMove()"><div  class="text-on-img">Drive</div>
+				<img class="effect" src="IMG/roadtripsong.jpeg"></div>
+				<div class="section5-3div"onclick="myMove()"><div  class="text-on-img">D.J.</div>
+				<img class="effect" src="IMG/electronicsong.jpeg"></div>
+				
+			</div>
+
+			
+
+			<div class="left-margin" id="list3-2">
+				
+				<div class="artist">Latest Hindi</div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr1.jpeg"></div>
+				<div onclick="myMove()"class="square-list1 "><img  src="IMG/imgsqr3.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr4.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr5.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr6.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr7.jpeg"></div>
+				
+			</div>
+
+
+
+			<div class="left-margin" id="list3-3">
+				
+				<div class="artist">Latest English</div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr8.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr9.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr1.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr3.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr4.jpeg"></div>
+				<div onclick="myMove()" class="square-list1 "><img  src="IMG/imgsqr5.jpeg"></div>
+				
+			</div>
+			
+				<divc class="SLowly-Slowlysong">
+						<div class ="animate" id="div1"><img src="IMG/GURU.jpg"></div>
+
+
+							<div class ="animate" id="div2"><h2>"Slowly Slowly"</h2> It is a song by Indian singer-songwriter 
+									Guru Randhawa featuring American rapper Pitbull,
+									released as a single by T-Series on 19 April 2019.</div>
+
+
+							<div class ="animate" id="div3">
+								<h2>Up-Next</h2>
+								<div class="up-next">
+									<p>1</p><div class="up-next-inner"><img src="IMG/imgsqr4.jpeg"></div><p>Pal Pal Dil K PAS</p>
+									<div class="upnext-heart"><i class="far fa-heart list-heart"></i> </div>
+									<div><i class="fas fa-plus"></i></div>
+								</div>
+
+								<div class="up-next">
+										<p>2</p><div class="up-next-inner"><img src="IMG/imgsqr2.jpeg"></div><p>Ae Dil H Muskil</p>
+										<div class="upnext-heart"><i class="far fa-heart list-heart"></i> </div>
+										<div><i class="fas fa-plus"></i></div>
+								</div>
+							</div>
+
+							<div class ="animate" id="div4">
+
+
+								<h2>Last Played</h2>
+								<div class="up-next">
+										<p>1</p><div class="up-next-inner"><img src="IMG/imgsqr8.jpeg"></div><p>Ae Mere Humnava </p>
+										<div class="upnext-heart"><i class="far fa-heart list-heart"></i> </div>
+										<div><i class="fas fa-plus"></i></div>
+								 </div>
+
+								 <div class="up-next">
+										<p>2</p><div class="up-next-inner"><img src="IMG/imgsqr9.jpeg"></div><p>MADE In INDIA</p>
+										<div class="upnext-heart"><i class="far fa-heart list-heart"></i> </div>
+										<div><i class="fas fa-plus"></i></div>
+								 </div>
+							    </div>
+				</divc>
+									
+									
+					</div>
+
+				</div>
+
+
+				<div id="right-div">
+				<div class="right-list" style="position:sticky;"><div style="font-weight: 1000;color: white; ">
+					<h2><p class="musicplayername list">List</p></h2></div>
+					<div><i class="fas fa-caret-down arrow"></i></div><div class="option-3dots arrow-option"></div></div>
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr1.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>SlowDown<br>04:56</p></div><div><i class="far fa-heart list-heart"></i></div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr2.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Galliyan<br>02:26</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr3.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Tum hi ho<br>05:36</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr5.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Mat ja re<br>01:15</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr6.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>SlowDown<br>02:36</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr7.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Galliyan<br>01:26</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr8.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Tum hi ho<br>03:12</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr1.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Mat ja re<br>01:27</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr2.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>SlowDown<br>05:56</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr3.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Galliyan<br>02:56</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr4.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Tum hi ho<br>01:16</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+
+				<div class="right-list" onclick="myMove()"><div class="right-list-inside">
+					<img  src="IMG/imgsqr1.jpeg"></div><div class="music-time-div music-time-div2 ">
+						<p>Mat ja re</p></div><div><i class="far fa-heart list-heart"></i> </div></div>
+				
+			</div>
+
+	
+
+</main>
+<footer>
+	<div id="music-playbutton">
+
+			<div class="music-playbutton-div" id="music-playbutton-div1">
+				<div id="music-playbutton-div1-div1"><img src="IMG/musicimg1.jpeg" alt=""></div>
+				<div id="music-playbutton-div1-div2">SLOW MOTION</div>
+				<div id="music-playbutton-div1-div3"><i class="far fa-heart"></i> </div>
+				
+			</div>
+			<div class="music-playbutton-div" id="music-playbutton-div2">
+				<i class="fas fa-redo" id="redo-btn"></i>
+				<i class="fas fa-fast-backward"></i>
+				<i class="far fa-pause-circle"></i>
+				<i class="fas fa-fast-forward"></i>
+				<i class="fas fa-random"></i>
+		
+				<div id="slider">
+					<div style="width: 40%; height: 8px;background-color:green;position: absolute;">
+					</div>
+					<div id="music-range"></div>
+				</div>
+		
+			</div>
+			<div class="music-playbutton-div" id="music-playbutton-div3">
+				<div id="music-option-icon"><i class="fas fa-align-left" ></i></div>
+				<div id="music-volume-icon"><i class="fas fa-volume-up" ></i></div>
+				<div id="volume-slider">
+				<div style="width: 40%; height: 5px;background-color: green;position: absolute;"></div>
+				<div id="music-range1"></div>
+				</div>
+				<div onclick="show('music-playbutton')" id="cross-sign"><i class="fas fa-times"></i></div>
+			</div>
+		
+		</div>
+	</footer>
+	</div>
+</body>
+</html>

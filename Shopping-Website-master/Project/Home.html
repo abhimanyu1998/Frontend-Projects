@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="social.css">  
+	<link rel="stylesheet" type="text/css" href="Home.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="Home.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript">
+		var myapp=angular.module("myapp",[])
+		myapp.controller("mycontrol",function($scope){
+
+			$scope.items=["Apple","Samsung","Lenevo","L.G.","Mi","OnePlus","Micromax","Karbon","RealMe"];
+		});
+
+		function show1()
+		{
+			document.getElementById("abc").style.display="block";
+		}
+
+		function hide1()
+		{
+			document.getElementById("abc").style.display="none";
+		}
+
+		function loginfunction1()
+		{
+			var username=document.getElementById('username').value;
+			var password=document.getElementById('password').value;
+			if(username=="shraddha"&&password=="1234")
+			{
+				document.getElementById('id01').style.display='none'
+				document.getElementById('loginimage').style.display='none';
+				document.getElementById('afterlogin').style.display='inline-block';
+				document.getElementById('cartimage1').style.display='inline-block';
+			}
+			else
+			{
+					window.alert("INVALID USERNAME OR PASSWORD");
+			}
+		}
+	</script>
+</head>
+
+<!-- =====================================Body Start================================================ -->
+<body id="body1" ng-app="myapp" ng-controller="mycontrol">
+
+<div id="maindiv">
+<!-- =================================NAVIGATION SECTION============================================ -->
+<section id="section1">
+	
+	<nav>
+		<span id="afterlogin" class="zoom">Hi ! Vishal</span>
+	<img   id="logoimage" src="img/logo.png">
+
+	<input type="button"  name="" id="dropbutton" value="Search">
+ 	<input type="text"    ng-model="x" id="searchbar" style="height: 46px;"  name="" onclick="show1()" ondblclick="hide1()" placeholder="Search for items">
+ 	<input type="image"   src="img/searchimage.png"  class="search" id="searchbutton" >
+
+	<div  onclick=" window.open('cartorders.html')" style="width:auto";id="loginimagediv"><img id="cartimage1" style="display: none" class="cart zoom" src="img/cartimage.jpg"></div>
+
+
+ 	<div onclick="document.getElementById('id01').style.display='block'" style="width:auto";id="loginimagediv"><img id="loginimage" class="loginicon zoom" src="img/login.jpeg"></div>
+
+ 	
+	</nav>
+
+</section>	
+</div>
+
+<!-- ===============================LINK OF THE ITEMS CATEGORY===================================== -->
+<div id="navproperty">
+	<nav>
+	<a  class="alink" href="furniture.html"><span id="navg1" class="nav1 zoom" style="margin-left: 30px;"class="nav1 zoom">FURNITURE</span>
+		</a>
+	<a class="alink" href="game.html" ><span id="navg2" class="nav1 zoom">GAMES</span></a>
+
+
+	<a class="alink" href="appliance.html"><span id="navg3" class="nav1 zoom">APPLIANCES</span></a>
+	<a class="alink" href="grocery.html"><span id="navg4" class="nav1 zoom">GROCERY</span></a>
+	<a class="alink" href="applep.html"><span id="navg5" class="nav1 zoom">MOBILES</span></a>
+	<a class="alink" href="html/cloth.html"><span id="navg6" class="nav1 zoom">CLOTHES</span></a>
+</nav>
+</div>
+<!-- ================================================================================================ -->
+
+<!-- ======================================Inside the itemList ====================================== -->
+
+<section style="display: none" class="insideitem"  id="abc">
+	<ol>
+		<a href=""><li ng-repeat="obj in items | filter:x" >{{obj}}</li></a>
+	</ol>
+</section>
+<!-- ===================================Lights============================================  -->
+
+<!-- ==================================SLIDE SHOW======================================== -->
+
+
+<div class=" div2 ">
+	<div class="slideshow"></div>
+</div>
+
+<!--========================= ITEM LIST 4 IN A ROW  ===================================== -->
+<div>
+
+	<section class="sectioncls">Get organized in style<span><img class="itemlist zoom" src="img/item1.jpg"><br><a href="grocery.html" class="display">Explore for more</a></span></section>
+
+	<section class="sectioncls">Certified Refurbished<span><img class="itemlist zoom" src="img/item2.jpg"><br><a href="grocery.html" class="display">Explore for more</a></span></section>
+	
+	<section class="sectioncls">Delightful decor for you<span><img class="itemlist zoom" src="img/item3.jpg"><br><a href="furniture.html" class="display">Explore for more</a></span></section>
+	
+	<section class="sectioncls">Refurbished speakers<span><img class="itemlist zoom" src="img/item15.jpg"><br><a href="appliance.html" class="display">Explore for more</a></span></section>
+
+</div>
+<!-- =============================================================================================== -->
+
+
+
+<!--======== ============================Trending Items============================================== -->
+
+
+<section id="trendingitems">
+
+	<span class="textfontsize" id="trendingitem1">Related to items you've viewed</span>
+		
+	<span style="margin-left: 5px;"><img class="itemlist itemlist2div zoom " src="img/item21.jpg">
+	</span>
+	<span class=""><img onclick="window.open('appliance.html')" class="itemlist itemlist2div zoom" src="img/item16.jpg"></span>
+	<span class=""><img onclick="window.open('applew.html')" class="itemlist itemlist2div zoom" src="img/item17.jpg"></span>
+	<span class=""><img onclick="window.open('appliance.html')" class="itemlist itemlist2div zoom" src="img/item18.jpg"></span>
+	<span class=""><img onclick="window.open('appliance.html')" class="itemlist itemlist2div zoom" src="img/item19.jpg"></span>
+	<span class=""><img onclick="window.open('appliance.html')" class="itemlist itemlist2div zoom" src="img/item20.jpg"></span>	
+	
+</section>
+
+<!-- ====================================================================================================-->
+
+
+<!-- =================================Recommended Videos================================================ -->
+
+<div>
+
+	<section id="finalsuggest" class="zoom"  onclick="window.open('video.html')">
+	 <img src="img/finalsuggest.png" id="finalsuggestproperty">
+	</section>
+
+	<section class="sectioncls">Home gym equipment<span><img class="itemlist zoom" src="img/item6.jpg"><a href="furniture.html">See More</a></span></section>
+	
+	<section class="sectioncls">Luxury Ayurveda<span><img    class="itemlist zoom" src="img/item14.jpg"><a href="html/cloth.html">See More</a></span></section>
+
+</div>
+
+<!-- =======================================Laptop Advertisiment======================================== -->
+
+	<section id="ad1" >
+
+		<span class="threeboxes"><img onclick="window.open('furniture.html')" src="img/threebox1.jpg"  class="zoom"></span>
+		<span class="threeboxes"><img onclick="window.open('honorl.html')"src="img/threebox2.jpg" class="zoom"></span>
+		<span class="threeboxes"><img onclick="window.open('lenovop.html')"src="img/threebox3.jpg" class="zoom"></span>
+
+	</section>
+
+
+
+
+<!--========================================== Login Form ==============================================-->
+<div>
+<div id="id01" class="modal">
+  
+ 	 <form class="modal-content animate"method="post">
+    	
+    	<div class="imgcontainer">
+
+      	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     	 <div><img src="img/login.jpeg" alt="image Not Found" class="avatar" id="poploginimage"></div>
+    	
+    	</div>
+
+
+    	<div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input id="username"type="text" placeholder="Enter Username" name="uname" required style="height: 40px;">
+
+	      <label for="psw"><b>Password</b></label><br>
+	      <input id="password" style="height: 40px;" type="password" placeholder="Enter Password" name="psw" required>
+        
+          <button onclick="loginfunction1()" style="background-color: #3498DB">Login</button>
+          <input style="display: inline-block;"type="checkbox" checked="checked" name="remember">
+          <label style="position: absolute; margin-top: 35px;"> Remember me
+          </label>
+
+         </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick=" document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+ 
+  </form>
+</div>
+</div>
+<!--==================================================================================================  -->
+
+<footer>
+	<section class="footer2">
+
+	<span id="footerbox1"><p>Quick_Shop</p></span>
+	<hr>
+	<span class="footerbox">
+	<h2>Get To Know Us</h2>
+	<a href=""><p>About Us</p></a>	
+	<a href=""><p>Careers</p></a>
+	<a href=""><p>Press Releases</p></a>
+	<a href=""><p>Gift a Smile</p></a>
+	
+	</span>
+	<span class="footerbox">
+		<h2>Connect With Us</h2>
+		<a href=""><p>Facebook</p></a>
+		<a href=""><p>Instagram</p></a>
+		<a href=""><p>Twitter</p></a>
+		<a href=""><p>Google+</p></a>
+	</span>
+	<span class="footerbox">
+		<h2>Make Money With Us</h2>
+		<a href=""><p>Sell On Quick_Shop</p></a>
+		<!-- <a href=""><p>Sell Under Quick_Shop Accelerator</p></a> -->
+		<a href=""><p>Advertise Your Products</p></a>
+		<a href=""><p>Become an Affiliate</p></a>
+		<a href=""><p>Quick_Shop Pay on Merchants</p></a>
+
+	</span>
+	<span class="footerbox">
+		<h2>Let Us Help You Us</h2>
+		<a href="">Your Account</a>
+		<a href=""><p>Your Account</p></a>
+		<a href=""><p>100% Purchase Protectionr</p></a>
+		<a href=""><p>Help</p></a>
+		
+	</span>
+	<hr>
+	</section>
+</footer>
+
+
+
+<script>
+
+
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
